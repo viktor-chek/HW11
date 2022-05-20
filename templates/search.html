@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Поиск кандидата</title>
+    </head>
+    <body>
+        <h1>Найдено кандидатов {{count}}</h1>
+        {% for item in coincidences %}
+        <p> <a href="/candidate/{{item.id}}">{{item.name}}</a> </p>
+        {% endfor %}
+    </body>
+</html>
